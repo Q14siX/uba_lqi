@@ -1,0 +1,80 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "UBA Luftqualitätsindex (LQI) einrichten",
+        "description": "Wähle aus, wie die Umgebung für die Stationssuche bestimmt werden soll.",
+        "data": {
+          "location_source": "Standortquelle",
+          "search_radius_km": "Suchradius",
+          "max_candidates": "Maximale Anzahl vorgeschlagener Stationen",
+          "scan_interval_minutes": "Aktualisierungsintervall"
+        }
+      },
+      "manual_location": {
+        "title": "Manuelle Position",
+        "description": "Gib die Koordinaten ein, um Luftmessstationen in der Nähe zu suchen.",
+        "data": {
+          "latitude": "Breitengrad",
+          "longitude": "Längengrad"
+        }
+      },
+      "select_stations": {
+        "title": "Stationen auswählen",
+        "description": "Es wurden {candidate_count} Stationen in der Nähe von {latitude}, {longitude} gefunden bzw. vorgeschlagen. Suchradius: {radius} km.",
+        "data": {
+          "selected_stations": "Stationen"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Die API konnte nicht erreicht werden.",
+      "home_location_missing": "In Home Assistant ist kein Standort hinterlegt.",
+      "invalid_coordinates": "Ungültige Koordinaten. Bitte Breiten- und Längengrad prüfen.",
+      "no_station_selected": "Bitte wähle mindestens eine Station aus."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "UBA Luftqualitätsindex (LQI) konfigurieren",
+        "description": "Passe Standort, Suchradius und Aktualisierungsintervall an.",
+        "data": {
+          "location_source": "Standortquelle",
+          "search_radius_km": "Suchradius",
+          "max_candidates": "Maximale Anzahl vorgeschlagener Stationen",
+          "scan_interval_minutes": "Aktualisierungsintervall"
+        }
+      },
+      "manual_location": {
+        "title": "Manuelle Position",
+        "description": "Gib die Koordinaten ein, um Luftmessstationen in der Nähe zu suchen.",
+        "data": {
+          "latitude": "Breitengrad",
+          "longitude": "Längengrad"
+        }
+      },
+      "select_stations": {
+        "title": "Stationen auswählen",
+        "description": "Es wurden {candidate_count} Stationen in der Nähe von {latitude}, {longitude} gefunden bzw. vorgeschlagen. Suchradius: {radius} km.",
+        "data": {
+          "selected_stations": "Stationen"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Die API konnte nicht erreicht werden.",
+      "home_location_missing": "In Home Assistant ist kein Standort hinterlegt.",
+      "invalid_coordinates": "Ungültige Koordinaten. Bitte Breiten- und Längengrad prüfen.",
+      "no_station_selected": "Bitte wähle mindestens eine Station aus."
+    }
+  },
+  "selector": {
+    "location_source": {
+      "options": {
+        "home": "Home-Assistant-Standort",
+        "manual": "Manuelle Koordinaten"
+      }
+    }
+  }
+}

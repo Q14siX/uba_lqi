@@ -1,0 +1,80 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up UBA Air Quality Index (LQI)",
+        "description": "Choose how the nearby station search should determine your area.",
+        "data": {
+          "location_source": "Location source",
+          "search_radius_km": "Search radius",
+          "max_candidates": "Maximum suggested stations",
+          "scan_interval_minutes": "Update interval"
+        }
+      },
+      "manual_location": {
+        "title": "Manual position",
+        "description": "Enter coordinates to search for nearby air quality stations.",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude"
+        }
+      },
+      "select_stations": {
+        "title": "Select stations",
+        "description": "{candidate_count} nearby stations were found or suggested around {latitude}, {longitude}. Search radius: {radius} km.",
+        "data": {
+          "selected_stations": "Stations"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach the API.",
+      "home_location_missing": "No Home Assistant location is configured.",
+      "invalid_coordinates": "Invalid coordinates. Please check latitude and longitude.",
+      "no_station_selected": "Please select at least one station."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configure UBA Air Quality Index (LQI)",
+        "description": "Adjust location, search radius and update interval.",
+        "data": {
+          "location_source": "Location source",
+          "search_radius_km": "Search radius",
+          "max_candidates": "Maximum suggested stations",
+          "scan_interval_minutes": "Update interval"
+        }
+      },
+      "manual_location": {
+        "title": "Manual position",
+        "description": "Enter coordinates to search for nearby air quality stations.",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude"
+        }
+      },
+      "select_stations": {
+        "title": "Select stations",
+        "description": "{candidate_count} nearby stations were found or suggested around {latitude}, {longitude}. Search radius: {radius} km.",
+        "data": {
+          "selected_stations": "Stations"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach the API.",
+      "home_location_missing": "No Home Assistant location is configured.",
+      "invalid_coordinates": "Invalid coordinates. Please check latitude and longitude.",
+      "no_station_selected": "Please select at least one station."
+    }
+  },
+  "selector": {
+    "location_source": {
+      "options": {
+        "home": "Home Assistant location",
+        "manual": "Manual coordinates"
+      }
+    }
+  }
+}
