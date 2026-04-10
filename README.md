@@ -17,6 +17,8 @@ HACS-fähige Custom Integration für die Luftqualitätsdaten des Umweltbundesamt
 
 ## Installation über HACS
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Q14siX&repository=uba_lqi&category=integration)
+
 ### Variante 1: Benutzerdefiniertes Repository
 
 1. **HACS** öffnen
